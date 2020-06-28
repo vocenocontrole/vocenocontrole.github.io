@@ -1,0 +1,235 @@
+$tema-vermelho: #F57624d9;
+$tema-amarelo: #FFBD26;
+$tema-amarelo-transparente: #ffbe26f1;
+$theme-colors:(
+    "tema-vermelho" : $tema-vermelho,
+    "tema-amarelo" : $tema-amarelo
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.banner-principal{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5%;
+}
+
+.banner-principal > .conteudo-banner{
+    width: 40%;
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px;
+    background-color: $tema-vermelho;
+    box-shadow: 10px 5px 5px #444444;
+}
+
+.banner-principal > .conteudo-banner > h1{
+    font-size: 34px;
+    color: #ffffff;
+    text-align: right;
+    text-shadow: #222 2px 2px 2px;
+    
+}
+
+.banner-principal > .conteudo-banner > p{
+    font-size: 20px;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: #222 2px 3px 2px;
+}
+
+.banner-principal > .conteudo-banner > .botao-banner{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-principal > .conteudo-banner > .botao-banner > button{
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+@media(max-width:992px){
+    .banner-principal{
+        background-image: url(../img/banner-mobile.png);
+        align-items: center;
+    }
+    .banner-principal > .conteudo-banner{
+        width: auto;
+    }
+}
+
+.conteudo{
+    padding: 0 5% 0 5%;
+}
+.campo-1{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.campo-1 > .duplo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.campo-1 > .duplo > .colunas{
+    width: 47.5%;
+
+}
+.campo-1 > .duplo > .video{
+    width: 100%;
+
+}
+
+.campo-1 > .titulo > h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.campo-1 > .duplo > .colunas > p{
+    text-align: justify;
+
+}
+
+@media(max-width:992px){
+    .campo-1 > .duplo{
+        flex-direction: column;
+    }    
+    .campo-1 > .duplo > .colunas{
+        width: 100%;
+        margin-bottom: 40px;
+    
+    }
+}
+
+.campo-2{
+    background-color: $tema-amarelo;
+    margin-bottom: 100px;
+    padding: 50px 0;
+}
+
+.campo-2 > .conteudo > .duplo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.campo-2 > .conteudo > .galeria{
+    margin-top: 50px;
+
+}
+.img-galeria{
+    margin: 0 20px;
+
+}
+
+.campo-2 > .conteudo > .duplo > .colunas{
+    width: 47.5%;
+
+}
+
+.campo-2 > .conteudo > .duplo > .colunas > h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+.campo-2 > .conteudo > .duplo > .colunas > p{
+    text-align: justify;
+}
+
+@media(max-width:992px){
+    .campo-2 > .conteudo > .duplo{
+        flex-direction: column-reverse;
+    }
+    .campo-2 > .conteudo > .duplo > .colunas{
+        width: 100%;
+    
+    }
+    .campo-2 > .conteudo > .duplo > .colunas > h2{
+        margin-top: 30px;
+    
+    }
+}
+
+.campo-3{
+    margin-bottom: 100px;
+}
+
+.campo-3 > h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campo-4{
+    background-color: $tema-amarelo;
+    padding: 50px 0;
+}
+
+.campo-4 > .conteudo > .triplo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campo-4 > .conteudo > .triplo > .colunas{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-4 > .conteudo > .triplo > .colunas > h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.campo-4 > .conteudo > .triplo > .colunas > img{
+    margin-bottom: 20px;
+}
+
+.campo-4 > .conteudo > .triplo > .colunas > ul{
+    margin-bottom: 20px;
+}
+
+.campo-4 > .conteudo > .triplo > .colunas > ul > li{
+    margin-right: 10px;
+}
+
+#backToTop{
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+@media(max-width:992px){
+    .campo-4 > .conteudo > .triplo{
+        flex-direction: column;
+    }
+    .campo-4 > .conteudo > .triplo > .colunas{
+        width: 100%;
+    }
+
+    .campo-4 > .conteudo > .triplo > .colunas > .mapa{
+        margin-bottom: 40px;
+    }
+
+}
+
+.campo-5{
+     background-color: #000c65;
+     padding: 2px 0;
+}
+
+.campo-5 >p{
+    text-align: center;
+    color: #fff;
+}
