@@ -1,4 +1,5 @@
-$tema-vermelho: #F57624d9;
+$tema-vermelho: #f57824d0;
+$tema-vermelho-mobile: #f5782438;
 $tema-amarelo: #FFBD26;
 $tema-amarelo-transparente: #ffbe26f1;
 $theme-colors:(
@@ -24,7 +25,7 @@ $theme-colors:(
     border-radius: 5px;
     padding: 30px 30px 30px 30px;
     background-color: $tema-vermelho;
-    box-shadow: 10px 5px 5px #444444;
+    box-shadow: 5px 5px 5px #44444469;
 }
 
 .banner-principal > .conteudo-banner > h1{
@@ -52,15 +53,36 @@ $theme-colors:(
     padding: 10px 25px;
 }
 
+.placas-transito{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 50px 0;
+}
+
+.placas-transito > img{
+    height: 100px;
+}
+
 @media(max-width:992px){
     .banner-principal{
-        background-image: url(../img/banner-mobile.png);
+        background-image: url(../img/carro-banner-1.jpeg);
         align-items: center;
     }
     .banner-principal > .conteudo-banner{
         width: auto;
+        background-color: $tema-vermelho-mobile;
+    }
+
+    .placas-transito{
+        margin: 25px 0 25px 0;
+    }
+
+    .placas-transito > img{
+        height: 50px;
     }
 }
+
+
 
 .conteudo{
     padding: 0 5% 0 5%;
@@ -109,10 +131,43 @@ $theme-colors:(
     }
 }
 
-.campo-2{
+.campo-2, .campo-6{
     background-color: $tema-amarelo;
     margin-bottom: 100px;
     padding: 50px 0;
+}
+
+.campo-6 > .conteudo > h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.campo-6 > .conteudo > .card-planos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-6 > .conteudo > .card-planos > .card{
+    width: 23%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.campo-6 > .conteudo > .card-planos > .card > .card-header{
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+@media(max-width:992px){
+    .campo-6 > .conteudo > .card-planos{
+        flex-direction: column;
+    }
+    .campo-6 > .conteudo > .card-planos > .card{
+        width: 100%;
+        
+    }
 }
 
 .campo-2 > .conteudo > .duplo{
